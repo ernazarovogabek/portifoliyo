@@ -24,7 +24,7 @@ function Contact() {
             <a href="https://github.com/ernazarovogabek" target="_blank" rel="noopener noreferrer" className="contact-link">
               <span><GitHubIcon /></span> GitHub
             </a>
-            <a href="https://t.me/@vr242547" target="_blank" rel="noopener noreferrer" className="contact-link">
+            <a href="https://t.me/vr242547" target="_blank" rel="noopener noreferrer" className="contact-link">
               <span><TelegramIcon /></span> Telegram
             </a>
           </div>

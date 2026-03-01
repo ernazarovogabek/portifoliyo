@@ -1,44 +1,44 @@
 function Projects() {
   const projects = [
     {
-      title: 'E-commerce Platform',
+      title: 'TIL-OZGARTIRISH',
       description: 'React va TypeScript yordamida yaratilgan zamonaviy onlayn do\'kon',
-      tags: ['React', 'TypeScript', 'CSS'],
-      icon: '🛒',
-      liveLink: 'https://til-o-zgartirish.vercel.app/',
-      githubLink: 'https://github.com/ernazarovogabek'
+      tags: ['React', 'React-i18next' , 'CSS'],
+      video: '/video/til-ozgartirish.mp4',
+      liveLink: 'https://til-o-zgartirish-pwed-rklf1khit-ogabeks-projects-b3568eed.vercel.app/',
+      githubLink: 'https://github.com/ernazarovogabek/til-o-zgartirish'
     },
     {
-      title: 'Portfolio Website',
+      title: 'NEXT-FIGMA',
       description: 'Next.js va Tailwind CSS bilan yaratilgan portfolio sayti',
       tags: ['Next.js', 'React', 'Tailwind'],
-      icon: '💼',
-      liveLink: 'https://your-project-link.com',
-      githubLink: 'https://github.com/ernazarovogabek'
+      video: '/video/next-figma.mp4',
+      liveLink: 'https://next-figma-sigma.vercel.app/',
+      githubLink: 'https://github.com/ernazarovogabek/next-figma'
     },
     {
-      title: 'Business Dashboard',
+      title: 'NEXT-TODO',
       description: 'Figma dizaynidan React ilovasiga o\'tkazilgan admin panel',
-      tags: ['React', 'JavaScript', 'Figma'],
-      icon: '📊',
-      liveLink: 'https://your-project-link.com',
-      githubLink: 'https://github.com/ernazarovogabek'
+      tags: ['Next', 'APi', 'Tailwind'],
+      video: '/video/next-todo.mp4',
+      liveLink: 'https://next-todo-krll.vercel.app/',
+      githubLink: 'https://github.com/ernazarovogabek/next-todo'
     },
     {
       title: 'Landing Page',
       description: 'Figma dizaynidan HTML/CSS/JS ga o\'tkazilgan responsive landing page',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      icon: '🎨',
-      liveLink: 'https://your-project-link.com',
-      githubLink: 'https://github.com/ernazarovogabek'
+      tags: ['Next', 'TypeScript', 'Postman' , 'React' , 'JavaScript' , 'Tanstack-Query'],
+      video: '/video/crm.mp4',
+      liveLink: 'https://admin-crm-backend-prayect.vercel.app/dashboard',
+      githubLink: 'https://github.com/ernazarovogabek/admin-crm-backend-prayect'
     },
     {
       title: 'Movie App',
       description: 'React va API integratsiyasi bilan film qidiruv ilovasi',
       tags: ['React', 'API', 'CSS'],
-      icon: '🎬',
-      liveLink: 'https://your-project-link.com',
-      githubLink: 'https://github.com/ernazarovogabek'
+      video: '/video/Gitaru.mp4',
+      liveLink: 'https://gitaru.vercel.app/',
+      githubLink: 'https://github.com/ernazarovogabek/gitaru'
     },
     {
       title: 'Weather App',
@@ -64,7 +64,29 @@ function Projects() {
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-image">
-                <div className="project-placeholder">{project.icon}</div>
+                {project.video ? (
+                  <video 
+                    src={project.video} 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    style={{ 
+                      width: '100%', 
+                      height: '100%', 
+                      objectFit: 'cover',
+                      display: 'block',
+                      padding: "20px"
+                    }}
+                    onError={(e) => {
+                      console.error('Video yuklanmadi:', project.video);
+                      e.target.style.display = 'none';
+                      e.target.parentElement.innerHTML = '<div class="project-placeholder">' + (project.icon || '🎬') + '</div>';
+                    }}
+                  />
+                ) : (
+                  <div className="project-placeholder">{project.icon}</div>
+                )}
               </div>
               <div className="project-info">
                 <h3>{project.title}</h3>
