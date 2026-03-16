@@ -2,7 +2,7 @@ function Projects() {
   const projects = [
     {
       title: 'TIL-OZGARTIRISH',
-      description: 'React va TypeScript yordamida yaratilgan zamonaviy onlayn do\'kon',
+      description: 'React va i-18 yordamida yaratilgan sayt',
       tags: ['React', 'React-i18next' , 'CSS'],
       video: '/video/til-ozgartirish.mp4',
       liveLink: 'https://til-o-zgartirish-pwed-rklf1khit-ogabeks-projects-b3568eed.vercel.app/',
@@ -10,7 +10,7 @@ function Projects() {
     },
     {
       title: 'NEXT-FIGMA',
-      description: 'Next.js va Tailwind CSS bilan yaratilgan portfolio sayti',
+      description: 'Next.js va Tailwind CSS orqali router qilingan sayt',
       tags: ['Next.js', 'React', 'Tailwind'],
       video: '/video/next-figma.mp4',
       liveLink: 'https://next-figma-sigma.vercel.app/',
@@ -18,15 +18,15 @@ function Projects() {
     },
     {
       title: 'NEXT-TODO',
-      description: 'Figma dizaynidan React ilovasiga o\'tkazilgan admin panel',
+      description: 'Next va api orqali yasalgan todo',
       tags: ['Next', 'APi', 'Tailwind'],
       video: '/video/next-todo.mp4',
       liveLink: 'https://next-todo-krll.vercel.app/',
       githubLink: 'https://github.com/ernazarovogabek/next-todo'
     },
     {
-      title: 'Landing Page',
-      description: 'Figma dizaynidan HTML/CSS/JS ga o\'tkazilgan responsive landing page',
+      title: 'NEXT-ADMIN-CRM',
+      description: 'Admin-CRM backend orqali qilingan',
       tags: ['Next', 'TypeScript', 'Postman' , 'React' , 'JavaScript' , 'Tanstack-Query'],
       video: '/video/crm.mp4',
       liveLink: 'https://admin-crm-backend-prayect.vercel.app/dashboard',
@@ -34,7 +34,7 @@ function Projects() {
     },
     {
       title: 'Movie App',
-      description: 'React va API integratsiyasi bilan film qidiruv ilovasi',
+      description: 'Reactda routerlar orqali yasalgan figma',
       tags: ['React', 'API', 'CSS'],
       video: '/video/Gitaru.mp4',
       liveLink: 'https://gitaru.vercel.app/',
